@@ -20,6 +20,24 @@ Update Mood State
 - Simple logic structure
 - Expandable architecture
 
+# 🧠 Mini AI Engine (C)
+
+A simple chatbot built in C using an intent-based system.
+
+## 🔥 Features
+- Intent detection (not just keyword matching)
+- Mood system (AI has emotional state)
+- Memory system (remembers past inputs)
+- Anti-spam system (prevents looping)
+
+## ⚙️ How it works
+Input → Intent Detection → Logic → Response → Memory
+
+## ▶️ Run
+```bash
+gcc mini_ai_engine.c -o ai
+./ai
+
 ## Build
 ```bash
 gcc ai2.c -o ai
