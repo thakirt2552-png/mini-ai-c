@@ -2,6 +2,18 @@
 
 A simple C-based mini AI experiment.
 
+User Input
+   ↓
+Keyword Matching (strstr)
+   ↓
+Update Mood State
+   ↓
+เลือก Response
+   ↓
+แสดงผล
+   ↓
+บันทึก Memory
+
 ## Features
 - Basic input/output
 - Simple logic structure
