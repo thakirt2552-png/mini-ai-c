@@ -1,0 +1,5 @@
+ai
+*.out
+*.exe
+*.o
+*.dSYM
