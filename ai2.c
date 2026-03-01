@@ -91,10 +91,12 @@ int main()
         if (mood < -3)
             mood = -3;
 
-        // ===== Repeat Check =====
-        if (strcmp(input, lastInput) == 0 && strlen(lastInput) > 0)
+        // ===== Repeat Check (Improved UX) =====
+        // ถ้าพิมพ์ซ้ำ และไม่ใช่คำสั่ง think ให้หยุดทันที
+        if (strcmp(input, lastInput) == 0 && strlen(lastInput) > 0 && !strstr(input, "think"))
         {
             printf("AI: You already said that... time is looping.\n");
+            continue; // ป้องกัน double response
         }
 
         // ===== Response System =====
@@ -168,6 +170,5 @@ int main()
 
         strcpy(lastInput, input);
     }
-    // test commit
     return 0;
 }
