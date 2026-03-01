@@ -2,6 +2,7 @@
 
 A simple C-based mini AI experiment.
 
+## FLOW
 User Input
    ↓
 Keyword Matching (strstr)
